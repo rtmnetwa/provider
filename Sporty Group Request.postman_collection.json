@@ -1,0 +1,106 @@
+{
+  "info": {
+    "_postman_id": "54322b58-676c-4a82-9148-c9ac4253f62d",
+    "name": "Sporty Group Request",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "23023239",
+    "_collection_link": "https://go.postman.co/collection/23023239-54322b58-676c-4a82-9148-c9ac4253f62d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Alpha_Odds_Change",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Alpha_Settlement",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"msg_type\": \"settlement\",\r\n    \"event_id\": \"ev123\",\r\n    \"outcome\": \"1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/provider-alpha/feed",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "provider-alpha",
+            "feed"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Beta_Odds_Change",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"type\": \"ODDS\",\r\n    \"event_id\": \"ev456\",\r\n    \"odds\": {\r\n        \"home\": 1.95,\r\n        \"draw\": 3.2,\r\n        \"away\": 4.0\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/provider-beta/feed",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "provider-beta",
+            "feed"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Beta_Settlement",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"type\": \"SETTLEMENT\",\r\n    \"event_id\": \"ev123\",\r\n    \"result\": \"away\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/provider-beta/feed",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "provider-beta",
+            "feed"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
