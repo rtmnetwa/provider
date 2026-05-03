@@ -1,0 +1,28 @@
+package za.co.sporty.provider.constants;
+
+public enum EProviderMarket {
+    HOME("HOME"),
+    DRAW("DRAW"),
+    AWAY("AWAY");
+
+    private String value;
+    private EProviderMarket(String value) {
+        this.value = value
+    }
+    public static EProviderMarket fromString(String value) {
+        return switch (value.toLowerCase()) {
+            case "1", "home" -> HOME;
+            case "x", "draw" -> DRAW;
+            case "2", "away" -> AWAY;
+            default -> throw new IllegalArgumentException("Invalid market value: " + value);
+        };
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+}

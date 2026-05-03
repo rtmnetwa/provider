@@ -1,0 +1,46 @@
+2026-05-03 15:44:35.266 [main] INFO  z.c.s.provider.ProviderApplication - Starting ProviderApplication using Java 21.0.8 with PID 20516 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03 15:44:35.269 [main] INFO  z.c.s.provider.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-03 15:44:35.970 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-03 15:44:35.981 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-03 15:44:35.983 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-03 15:44:35.991 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03 15:44:36.041 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 722 ms
+2026-05-03 15:44:36.338 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-03 15:44:36.358 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-03 15:44:36.362 [main] INFO  z.c.s.provider.ProviderApplication - Started ProviderApplication in 1.681 seconds (process running for 2.048)
+2026-05-03 15:46:49.177 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03 15:46:49.182 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-03 15:47:30 - Starting ProviderApplication using Java 21.0.8 with PID 11388 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03 15:47:30 - No active profile set, falling back to 1 default profile: "default"
+2026-05-03 15:47:31 - Tomcat initialized with port 8080 (http)
+2026-05-03 15:47:31 - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-03 15:47:31 - Starting service [Tomcat]
+2026-05-03 15:47:31 - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03 15:47:31 - Root WebApplicationContext: initialization completed in 710 ms
+2026-05-03 15:47:31 - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-03 15:47:31 - Tomcat started on port 8080 (http) with context path '/'
+2026-05-03 15:47:31 - Started ProviderApplication in 1.614 seconds (process running for 1.982)
+2026-05-03 15:50:02 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03 15:50:02 - Graceful shutdown complete
+2026-05-03 15:50:26 - Starting ProviderApplication using Java 21.0.8 with PID 8312 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03 15:50:26 - No active profile set, falling back to 1 default profile: "default"
+2026-05-03 15:50:26 - Tomcat initialized with port 8080 (http)
+2026-05-03 15:50:26 - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-03 15:50:26 - Starting service [Tomcat]
+2026-05-03 15:50:26 - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03 15:50:26 - Root WebApplicationContext: initialization completed in 698 ms
+2026-05-03 15:50:27 - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-03 15:50:27 - Tomcat started on port 8080 (http) with context path '/'
+2026-05-03 15:50:27 - Started ProviderApplication in 1.611 seconds (process running for 1.977)
+2026-05-03 15:52:59 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03 15:52:59 - Graceful shutdown complete
+2026-05-03 15:54:01 - Starting ProviderApplication using Java 21.0.8 with PID 5508 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03 15:54:01 - No active profile set, falling back to 1 default profile: "default"
+2026-05-03 15:54:02 - Tomcat initialized with port 8080 (http)
+2026-05-03 15:54:02 - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-03 15:54:02 - Starting service [Tomcat]
+2026-05-03 15:54:02 - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03 15:54:02 - Root WebApplicationContext: initialization completed in 719 ms
+2026-05-03 15:54:02 - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-03 15:54:02 - Tomcat started on port 8080 (http) with context path '/'
+2026-05-03 15:54:02 - Started ProviderApplication in 1.624 seconds (process running for 2.002)

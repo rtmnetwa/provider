@@ -1,0 +1,281 @@
+2026-05-03T15:04:27.400+02:00  INFO 19916 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Starting ProviderApplication using Java 21.0.8 with PID 19916 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03T15:04:27.404+02:00  INFO 19916 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-05-03T15:04:28.198+02:00  INFO 19916 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-03T15:04:28.214+02:00  INFO 19916 --- [provider] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-03T15:04:28.214+02:00  INFO 19916 --- [provider] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03T15:04:28.277+02:00  INFO 19916 --- [provider] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 820 ms
+2026-05-03T15:04:28.650+02:00  INFO 19916 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-03T15:04:28.655+02:00  INFO 19916 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Started ProviderApplication in 1.808 seconds (process running for 2.249)
+2026-05-03T15:06:22.022+02:00  INFO 19916 --- [provider] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-03T15:06:22.023+02:00  INFO 19916 --- [provider] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-03T15:06:22.024+02:00  INFO 19916 --- [provider] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-05-03T15:07:06.243+02:00  INFO 19916 --- [provider] [http-nio-8080-exec-2] z.c.s.provider.service.MessageProcessor  : Logger OddsChange: OddsChangeDto(messageType=ODDS_CHANGE, eventId=ev456, oddsEntryList=[OddsEntry(eProviderMarket=HOME, value=1.95), OddsEntry(eProviderMarket=DRAW, value=3.2), OddsEntry(eProviderMarket=AWAY, value=4.0)], timestamp=Sun May 03 15:06:38 SAST 2026)
+2026-05-03T15:08:16.213+02:00  INFO 19916 --- [provider] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03T15:08:16.220+02:00  INFO 19916 --- [provider] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-03T15:08:20.618+02:00  INFO 18676 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Starting ProviderApplication using Java 21.0.8 with PID 18676 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03T15:08:20.622+02:00  INFO 18676 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-05-03T15:08:21.547+02:00  INFO 18676 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-03T15:08:21.562+02:00  INFO 18676 --- [provider] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-03T15:08:21.562+02:00  INFO 18676 --- [provider] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03T15:08:21.613+02:00  INFO 18676 --- [provider] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 926 ms
+2026-05-03T15:08:21.991+02:00  INFO 18676 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-03T15:08:21.998+02:00  INFO 18676 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Started ProviderApplication in 1.991 seconds (process running for 2.439)
+2026-05-03T15:08:53.922+02:00  INFO 18676 --- [provider] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-03T15:08:53.922+02:00  INFO 18676 --- [provider] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-03T15:08:53.923+02:00  INFO 18676 --- [provider] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-05-03T15:08:54.056+02:00 ERROR 18676 --- [provider] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "value" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "value" is null
+	at za.co.sporty.provider.constants.EProviderMarket.fromString(EProviderMarket.java:13) ~[classes/:na]
+	at za.co.sporty.provider.service.ProviderUtil.mapToStandardizedSettlement(ProviderUtil.java:95) ~[classes/:na]
+	at za.co.sporty.provider.service.MessageProcessor.processBetSettlement(MessageProcessor.java:46) ~[classes/:na]
+	at za.co.sporty.provider.service.MessageProcessor.processMessage(MessageProcessor.java:23) ~[classes/:na]
+	at za.co.sporty.provider.controllers.ProviderBetaController.handleMessage(ProviderBetaController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-05-03T15:09:07.849+02:00  INFO 18676 --- [provider] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03T15:09:07.853+02:00  INFO 18676 --- [provider] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-03T15:09:09.856+02:00  INFO 21348 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Starting ProviderApplication using Java 21.0.8 with PID 21348 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03T15:09:09.860+02:00  INFO 21348 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-05-03T15:09:10.708+02:00  INFO 21348 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-03T15:09:10.721+02:00  INFO 21348 --- [provider] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-03T15:09:10.721+02:00  INFO 21348 --- [provider] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03T15:09:10.778+02:00  INFO 21348 --- [provider] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 858 ms
+2026-05-03T15:09:11.184+02:00  INFO 21348 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-03T15:09:11.189+02:00  INFO 21348 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Started ProviderApplication in 1.895 seconds (process running for 2.467)
+2026-05-03T15:09:12.994+02:00  INFO 21348 --- [provider] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-03T15:09:12.995+02:00  INFO 21348 --- [provider] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-03T15:09:12.996+02:00  INFO 21348 --- [provider] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-05-03T15:10:55.794+02:00 ERROR 21348 --- [provider] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "value" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "value" is null
+	at za.co.sporty.provider.constants.EProviderMarket.fromString(EProviderMarket.java:13) ~[classes/:na]
+	at za.co.sporty.provider.service.ProviderUtil.mapToStandardizedSettlement(ProviderUtil.java:95) ~[classes/:na]
+	at za.co.sporty.provider.service.MessageProcessor.processBetSettlement(MessageProcessor.java:46) ~[classes/:na]
+	at za.co.sporty.provider.service.MessageProcessor.processMessage(MessageProcessor.java:23) ~[classes/:na]
+	at za.co.sporty.provider.controllers.ProviderBetaController.handleMessage(ProviderBetaController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-05-03T15:12:14.718+02:00 ERROR 21348 --- [provider] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "value" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "value" is null
+	at za.co.sporty.provider.constants.EProviderMarket.fromString(EProviderMarket.java:13) ~[classes/:na]
+	at za.co.sporty.provider.service.ProviderUtil.mapToStandardizedSettlement(ProviderUtil.java:95) ~[classes/:na]
+	at za.co.sporty.provider.service.MessageProcessor.processBetSettlement(MessageProcessor.java:46) ~[classes/:na]
+	at za.co.sporty.provider.service.MessageProcessor.processMessage(MessageProcessor.java:23) ~[classes/:na]
+	at za.co.sporty.provider.controllers.ProviderBetaController.handleMessage(ProviderBetaController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-05-03T15:12:14.743+02:00  INFO 21348 --- [provider] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03T15:12:14.750+02:00  INFO 21348 --- [provider] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-03T15:12:19.450+02:00  INFO 17140 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Starting ProviderApplication using Java 21.0.8 with PID 17140 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03T15:12:19.455+02:00  INFO 17140 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-05-03T15:12:20.643+02:00  INFO 17140 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-03T15:12:20.663+02:00  INFO 17140 --- [provider] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-03T15:12:20.663+02:00  INFO 17140 --- [provider] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03T15:12:20.776+02:00  INFO 17140 --- [provider] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1241 ms
+2026-05-03T15:12:21.222+02:00  INFO 17140 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-03T15:12:21.230+02:00  INFO 17140 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Started ProviderApplication in 2.514 seconds (process running for 3.064)
+2026-05-03T15:43:03.738+02:00  INFO 17140 --- [provider] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03T15:43:03.748+02:00  INFO 17140 --- [provider] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-03T16:20:31.376+02:00  INFO 9204 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Starting ProviderApplication using Java 21.0.8 with PID 9204 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03T16:20:31.380+02:00  INFO 9204 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-05-03T16:20:32.098+02:00  INFO 9204 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-03T16:20:32.111+02:00  INFO 9204 --- [provider] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-03T16:20:32.112+02:00  INFO 9204 --- [provider] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03T16:20:32.154+02:00  INFO 9204 --- [provider] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 724 ms
+2026-05-03T16:20:32.474+02:00  INFO 9204 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-03T16:20:32.479+02:00  INFO 9204 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Started ProviderApplication in 1.587 seconds (process running for 1.964)
+2026-05-03T16:20:51.660+02:00  INFO 9204 --- [provider] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-03T16:20:51.660+02:00  INFO 9204 --- [provider] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-03T16:20:51.661+02:00  INFO 9204 --- [provider] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-05-03T16:20:51.832+02:00  INFO 9204 --- [provider] [http-nio-8080-exec-3] z.c.s.provider.service.MessageProcessor  : Logger OddsChange: OddsChangeDto(messageType=ODDS_CHANGE, eventId=ev123, oddsEntryList=[OddsEntry(eProviderMarket=HOME, value=2.0), OddsEntry(eProviderMarket=DRAW, value=3.1), OddsEntry(eProviderMarket=AWAY, value=3.8)], timestamp=Sun May 03 16:20:51 SAST 2026)
+2026-05-03T16:20:59.905+02:00  INFO 9204 --- [provider] [http-nio-8080-exec-2] z.c.s.provider.service.MessageProcessor  : Logger BetSettlement: SettlementDto(messageType=BET_SETTLEMENT, eventId=ev123, result=HOME, timestamp=Sun May 03 16:20:59 SAST 2026)
+2026-05-03T16:21:06.579+02:00  INFO 9204 --- [provider] [http-nio-8080-exec-4] z.c.s.provider.service.MessageProcessor  : Logger OddsChange: OddsChangeDto(messageType=ODDS_CHANGE, eventId=ev456, oddsEntryList=[OddsEntry(eProviderMarket=HOME, value=1.95), OddsEntry(eProviderMarket=DRAW, value=3.2), OddsEntry(eProviderMarket=AWAY, value=4.0)], timestamp=Sun May 03 16:21:06 SAST 2026)
+2026-05-03T16:21:12.193+02:00  INFO 9204 --- [provider] [http-nio-8080-exec-5] z.c.s.provider.service.MessageProcessor  : Logger BetSettlement: SettlementDto(messageType=BET_SETTLEMENT, eventId=ev123, result=AWAY, timestamp=Sun May 03 16:21:12 SAST 2026)
+2026-05-03T16:27:03.340+02:00  INFO 9204 --- [provider] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03T16:27:03.345+02:00  INFO 9204 --- [provider] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-03T16:27:10.912+02:00  INFO 12456 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Starting ProviderApplication using Java 21.0.8 with PID 12456 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03T16:27:10.915+02:00  INFO 12456 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-05-03T16:27:11.617+02:00  INFO 12456 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-03T16:27:11.631+02:00  INFO 12456 --- [provider] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-03T16:27:11.631+02:00  INFO 12456 --- [provider] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03T16:27:11.677+02:00  INFO 12456 --- [provider] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 718 ms
+2026-05-03T16:27:12.027+02:00  INFO 12456 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-03T16:27:12.033+02:00  INFO 12456 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Started ProviderApplication in 1.595 seconds (process running for 1.955)
+2026-05-03T16:27:23.035+02:00  INFO 12456 --- [provider] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-03T16:27:23.035+02:00  INFO 12456 --- [provider] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-03T16:27:23.036+02:00  INFO 12456 --- [provider] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-05-03T16:27:23.150+02:00  INFO 12456 --- [provider] [http-nio-8080-exec-2] z.c.s.provider.service.ProviderUtil      : AlphaOddsChange: AlphaOddsChange(values={1=2.0, X=3.1, 2=3.8})
+2026-05-03T16:27:23.152+02:00  INFO 12456 --- [provider] [http-nio-8080-exec-2] z.c.s.provider.service.MessageProcessor  : Logger OddsChange: OddsChangeDto(messageType=ODDS_CHANGE, eventId=ev123, oddsEntryList=[OddsEntry(eProviderMarket=HOME, value=2.0), OddsEntry(eProviderMarket=DRAW, value=3.1), OddsEntry(eProviderMarket=AWAY, value=3.8)], timestamp=Sun May 03 16:27:23 SAST 2026)
+2026-05-03T16:34:08.084+02:00  INFO 12456 --- [provider] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03T16:34:08.089+02:00  INFO 12456 --- [provider] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-03T16:35:17.945+02:00  INFO 6656 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Starting ProviderApplication using Java 21.0.8 with PID 6656 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03T16:35:17.948+02:00  INFO 6656 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-05-03T16:35:18.659+02:00  INFO 6656 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-03T16:35:18.672+02:00  INFO 6656 --- [provider] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-03T16:35:18.673+02:00  INFO 6656 --- [provider] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03T16:35:18.717+02:00  INFO 6656 --- [provider] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 720 ms
+2026-05-03T16:35:19.043+02:00  INFO 6656 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-03T16:35:19.047+02:00  INFO 6656 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Started ProviderApplication in 1.57 seconds (process running for 1.93)
+2026-05-03T16:35:27.482+02:00  INFO 6656 --- [provider] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-03T16:35:27.482+02:00  INFO 6656 --- [provider] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-03T16:35:27.483+02:00  INFO 6656 --- [provider] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-05-03T16:35:27.595+02:00  INFO 6656 --- [provider] [http-nio-8080-exec-4] z.c.s.provider.service.ProviderUtil      : AlphaOddsChange: 
+Event Id: ev123
+MessageType: odds_update
+AlphaOddsChange(values={1=2.0, X=3.1, 2=3.8})
+2026-05-03T16:35:27.598+02:00  INFO 6656 --- [provider] [http-nio-8080-exec-4] z.c.s.provider.service.MessageProcessor  : Logger OddsChange: OddsChangeDto(messageType=ODDS_CHANGE, eventId=ev123, oddsEntryList=[OddsEntry(eProviderMarket=HOME, value=2.0), OddsEntry(eProviderMarket=DRAW, value=3.1), OddsEntry(eProviderMarket=AWAY, value=3.8)], timestamp=Sun May 03 16:35:27 SAST 2026)
+2026-05-03T16:36:09.196+02:00  INFO 6656 --- [provider] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03T16:36:09.201+02:00  INFO 6656 --- [provider] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-03T16:36:12.303+02:00  INFO 19608 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Starting ProviderApplication using Java 21.0.8 with PID 19608 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03T16:36:12.307+02:00  INFO 19608 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-05-03T16:36:13.022+02:00  INFO 19608 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-03T16:36:13.036+02:00  INFO 19608 --- [provider] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-03T16:36:13.036+02:00  INFO 19608 --- [provider] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03T16:36:13.082+02:00  INFO 19608 --- [provider] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 726 ms
+2026-05-03T16:36:13.414+02:00  INFO 19608 --- [provider] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-03T16:36:13.419+02:00  INFO 19608 --- [provider] [main] z.c.sporty.provider.ProviderApplication  : Started ProviderApplication in 1.593 seconds (process running for 1.952)
+2026-05-03T16:36:19.377+02:00  INFO 19608 --- [provider] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-03T16:36:19.377+02:00  INFO 19608 --- [provider] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-03T16:36:19.378+02:00  INFO 19608 --- [provider] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-05-03T16:36:19.486+02:00  INFO 19608 --- [provider] [http-nio-8080-exec-4] z.c.s.provider.service.ProviderUtil      : AlphaOddsChange: 	Event Id: ev123	MessageType: odds_update	AlphaOddsChange(values={1=2.0, X=3.1, 2=3.8})
+2026-05-03T16:36:19.489+02:00  INFO 19608 --- [provider] [http-nio-8080-exec-4] z.c.s.provider.service.MessageProcessor  : Logger OddsChange: OddsChangeDto(messageType=ODDS_CHANGE, eventId=ev123, oddsEntryList=[OddsEntry(eProviderMarket=HOME, value=2.0), OddsEntry(eProviderMarket=DRAW, value=3.1), OddsEntry(eProviderMarket=AWAY, value=3.8)], timestamp=Sun May 03 16:36:19 SAST 2026)
+2026-05-03T16:36:36.740+02:00  INFO 19608 --- [provider] [http-nio-8080-exec-5] z.c.s.provider.service.ProviderUtil      : AlphaBetSettlement: 
+Event Id: ev123
+MessageType: settlement
+AlphaBetSettlement(outcome=1)
+2026-05-03T16:36:36.741+02:00  INFO 19608 --- [provider] [http-nio-8080-exec-5] z.c.s.provider.service.MessageProcessor  : Logger BetSettlement: SettlementDto(messageType=BET_SETTLEMENT, eventId=ev123, result=HOME, timestamp=Sun May 03 16:36:36 SAST 2026)
+2026-05-03T16:37:06.086+02:00  INFO 19608 --- [provider] [http-nio-8080-exec-2] z.c.s.provider.service.ProviderUtil      : BetaOddsChange: 	Event Id: ev456	MessageType: ODDS	BetaOddsChange(odds={home=1.95, draw=3.2, away=4.0})
+2026-05-03T16:37:06.087+02:00  INFO 19608 --- [provider] [http-nio-8080-exec-2] z.c.s.provider.service.MessageProcessor  : Logger OddsChange: OddsChangeDto(messageType=ODDS_CHANGE, eventId=ev456, oddsEntryList=[OddsEntry(eProviderMarket=HOME, value=1.95), OddsEntry(eProviderMarket=DRAW, value=3.2), OddsEntry(eProviderMarket=AWAY, value=4.0)], timestamp=Sun May 03 16:37:06 SAST 2026)
+2026-05-03T16:37:11.776+02:00  INFO 19608 --- [provider] [http-nio-8080-exec-3] z.c.s.provider.service.ProviderUtil      : BetaBetSettlement: 
+Event Id: ev123
+MessageType: SETTLEMENT
+BetaBetSettlement(result=away)
+2026-05-03T16:37:11.777+02:00  INFO 19608 --- [provider] [http-nio-8080-exec-3] z.c.s.provider.service.MessageProcessor  : Logger BetSettlement: SettlementDto(messageType=BET_SETTLEMENT, eventId=ev123, result=AWAY, timestamp=Sun May 03 16:37:11 SAST 2026)

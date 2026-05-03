@@ -1,0 +1,14 @@
+2026-05-03 16:18:30 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03 16:18:30 - Graceful shutdown complete
+2026-05-03 16:18:32 - Starting ProviderApplication using Java 21.0.8 with PID 9608 (D:\Workspace\sportygroup\provider\target\classes started by rtmne in D:\Workspace\sportygroup\provider)
+2026-05-03 16:18:32 - No active profile set, falling back to 1 default profile: "default"
+2026-05-03 16:18:33 - Tomcat initialized with port 8080 (http)
+2026-05-03 16:18:33 - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-03 16:18:33 - Starting service [Tomcat]
+2026-05-03 16:18:33 - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03 16:18:33 - Root WebApplicationContext: initialization completed in 715 ms
+2026-05-03 16:18:33 - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-03 16:18:33 - Tomcat started on port 8080 (http) with context path '/'
+2026-05-03 16:18:33 - Started ProviderApplication in 1.645 seconds (process running for 2.084)
+2026-05-03 16:19:23 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03 16:19:23 - Graceful shutdown complete
