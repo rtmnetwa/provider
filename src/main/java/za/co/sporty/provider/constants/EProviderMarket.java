@@ -11,9 +11,9 @@ public enum EProviderMarket {
     }
     public static EProviderMarket fromString(String value) {
         return switch (value.toLowerCase()) {
-            case "1", "home" -> HOME;
-            case "x", "draw" -> DRAW;
-            case "2", "away" -> AWAY;
+            case IProviderConstants.ALPHA_MARKET_HOME , IProviderConstants.BETA_MARKET_HOME -> HOME;
+            case IProviderConstants.ALPHA_MARKET_DRAW , IProviderConstants.BETA_MARKET_DRAW -> DRAW;
+            case IProviderConstants.ALPHA_MARKET_AWAY ,IProviderConstants.BETA_MARKET_AWAY -> AWAY;
             default -> throw new IllegalArgumentException("Invalid market value: " + value);
         };
     }
