@@ -42,7 +42,7 @@ public class MessageProcessor {
      * @param payload
      */
     private void processBetSettlement(Object payload) {
-        if (payload instanceof AlphaBetSettlement || payload instanceof BetaBetSettlement) {
+        if (payload instanceof AlphaBetSettlement alphaBetSettlement || payload instanceof BetaBetSettlement betaBetSettlement) {
             SettlementDto standardizedBetSettlement = ProviderUtil.mapToStandardizedSettlement(payload);
             assert standardizedBetSettlement != null;
             System.out.println("Console BetSettlement: " + standardizedBetSettlement);

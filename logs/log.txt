@@ -279,3 +279,5 @@ Event Id: ev123
 MessageType: SETTLEMENT
 BetaBetSettlement(result=away)
 2026-05-03T16:37:11.777+02:00  INFO 19608 --- [provider] [http-nio-8080-exec-3] z.c.s.provider.service.MessageProcessor  : Logger BetSettlement: SettlementDto(messageType=BET_SETTLEMENT, eventId=ev123, result=AWAY, timestamp=Sun May 03 16:37:11 SAST 2026)
+2026-05-03T19:36:04.339+02:00  INFO 19608 --- [provider] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03T19:36:04.349+02:00  INFO 19608 --- [provider] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
